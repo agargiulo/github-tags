@@ -1,4 +1,4 @@
-db = Sequel.connect(ENV["DATABASE_URL"] || "sqlite://tagfeeds.db")
+db = Sequel.connect(ENV['DATABASE_URL'] || 'sqlite://tagfeeds.db')
 db.loggers << Logger.new(STDOUT)
 
 class Feed < Sequel::Model

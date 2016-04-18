@@ -13,9 +13,9 @@ p
   form action="/" method="POST"
     span.github-url
       ' github.com/
-      input#user-input class=has_errors(:user) type="text" name="user" value="" placeholder="Github user" list="user-list"
+      input#user-input class=errors?(:user) type="text" name="user" value="" placeholder="Github user" list="user-list"
       '/
-      input#repo-input class=has_errors(:repo) type="text" name="repo" value="" placeholder="Github repository" list="repo-list"
+      input#repo-input class=errors?(:repo) type="text" name="repo" value="" placeholder="Github repository" list="repo-list"
     br
     input type="submit" value="Get the Feed"
 - if @feed_link

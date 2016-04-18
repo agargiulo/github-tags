@@ -5,7 +5,7 @@ namespace :db do
   task :migrate do
     m = Sequel::Migrator
     db = Sequel.connect(ENV['DATABASE_URL'] || 'sqlite://library.sqlite')
-    dir = "migrations"
+    dir = 'migrations'
 
     target = ENV['TARGET'] ? ENV['TARGET'].to_i : nil
     current = ENV['CURRENT'] ? ENV['CURRENT'].to_i : nil
