@@ -13,3 +13,7 @@ namespace :db do
     m.run(db, dir, target: target, current: current)
   end
 end
+
+require 'rubocop/rake_task'
+RuboCop::RakeTask.new
+task default: :rubocop
