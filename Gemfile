@@ -7,6 +7,7 @@ gem 'octokit'
 gem 'sequel'
 gem 'pry'
 gem 'tilt', '~> 1.4.1'
+gem 'rake'
 
 group :developement do
   gem 'shotgun'
